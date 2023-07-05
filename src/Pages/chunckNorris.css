@@ -39,6 +39,29 @@
  -webkit-transform: translateY(-50%); /* Browser bug fix */
  transform: translateY(-50%); 
  }
+}
 
-
+.displayBox{
+width : 90%;
+margin: auto;
+display : grid;
+grid-template-columns : repeat(auto-fit, minmax(300px,max-content));
+justify-content : center;
+grid-gap : 10px;
+font-size : 15px
+}
+.card{
+    border: 1px solid white;
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+.card .headingCard{
+    padding-top: 1.1rem;
+    color: #1E3A8A;
 }
