@@ -1,0 +1,44 @@
+.bounceBox{
+ height: 40px;	
+ overflow: hidden;
+ position: relative;
+}
+.bounce{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(50%);
+ -webkit-transform:translateY(50%);	
+ transform:translateY(50%);
+ /* Apply animation to this element */	
+ -moz-animation: bounceBox 1s linear infinite alternate;
+ -webkit-animation: bounceBox 1s linear infinite alternate;
+ animation: bounceBox 1s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes bounceBox {
+ 0%   { -moz-transform: translateY(50%); }
+ 100% { -moz-transform: translateY(-50%); }
+}
+@-webkit-keyframes bounceBox {
+ 0%   { -webkit-transform: translateY(50%); }
+ 100% { -webkit-transform: translateY(-50%); }
+}
+@keyframes bounceBox {
+ 0%   { 
+ -moz-transform: translateY(50%); /* Browser bug fix */
+ -webkit-transform: translateY(50%); /* Browser bug fix */
+ transform: translateY(50%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-50%); /* Browser bug fix */
+ -webkit-transform: translateY(-50%); /* Browser bug fix */
+ transform: translateY(-50%); 
+ }
+
+
+}
