@@ -4,7 +4,7 @@ const initialState = {
 isLoading : false,
 isError : false,
 data : [],
-catData : []
+catData : {}
 }
 
 export const chuckReducer = (state=initialState , {type,payload}) => {
@@ -43,7 +43,7 @@ export const chuckReducer = (state=initialState , {type,payload}) => {
             ...state,
             isLoading : false,
             isError : false,
-            catData : [...payload]
+            catData : {...payload}
         }
     }
     case chuckDataCatFailure : {

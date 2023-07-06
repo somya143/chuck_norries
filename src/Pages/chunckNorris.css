@@ -1,67 +1,80 @@
 .bounceBox{
- height: 40px;	
- overflow: hidden;
- position: relative;
+    height: 40px;	
+    overflow: hidden;
+    position: relative;
 }
 .bounce{
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
  /* Starting position */
- -moz-transform:translateY(50%);
- -webkit-transform:translateY(50%);	
- transform:translateY(50%);
+    -moz-transform:translateY(50%);
+    -webkit-transform:translateY(50%);	
+    transform:translateY(50%);
  /* Apply animation to this element */	
- -moz-animation: bounceBox 1s linear infinite alternate;
- -webkit-animation: bounceBox 1s linear infinite alternate;
- animation: bounceBox 1s linear infinite alternate;
-}
+    -moz-animation: bounceBox 1s linear infinite alternate;
+    -webkit-animation: bounceBox 1s linear infinite alternate;
+    animation: bounceBox 1s linear infinite alternate;
+   }
 /* Move it (define the animation) */
 @-moz-keyframes bounceBox {
- 0%   { -moz-transform: translateY(50%); }
- 100% { -moz-transform: translateY(-50%); }
+    0%   { -moz-transform: translateY(50%); }
+    100% { -moz-transform: translateY(-50%); }
 }
 @-webkit-keyframes bounceBox {
- 0%   { -webkit-transform: translateY(50%); }
- 100% { -webkit-transform: translateY(-50%); }
+    0%   { -webkit-transform: translateY(50%); }
+    100% { -webkit-transform: translateY(-50%); }
 }
 @keyframes bounceBox {
- 0%   { 
- -moz-transform: translateY(50%); /* Browser bug fix */
- -webkit-transform: translateY(50%); /* Browser bug fix */
- transform: translateY(50%); 		
- }
+    0%   { 
+    -moz-transform: translateY(50%); /* Browser bug fix */
+    -webkit-transform: translateY(50%); /* Browser bug fix */
+    transform: translateY(50%); 		
+    }
  100% { 
- -moz-transform: translateY(-50%); /* Browser bug fix */
- -webkit-transform: translateY(-50%); /* Browser bug fix */
- transform: translateY(-50%); 
- }
+    -moz-transform: translateY(-50%); /* Browser bug fix */
+    -webkit-transform: translateY(-50%); /* Browser bug fix */
+    transform: translateY(-50%); 
+    }
 }
 
 .displayBox{
-width : 90%;
-margin: auto;
-display : grid;
-grid-template-columns : repeat(auto-fit, minmax(300px,max-content));
-justify-content : center;
-grid-gap : 10px;
-font-size : 15px
+    width : 85%;
+    margin: auto;
+    display : grid;
+    grid-template-columns : repeat(auto-fit, minmax(269px,max-content));
+    justify-content : center;
+    font-size : 15px
 }
 .card{
     border: 1px solid white;
-    height: 150px;
+    height: 160px;
     width: 250px;
     background-color: white;
     text-align: center;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    
+    border-radius: 7px;
+}
+.card:hover{
+    height: 158px;
+    width: 248px;
 }
 .card .headingCard{
-    padding-top: 1.1rem;
+    padding-top: 2.3rem;
     color: #1E3A8A;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
+.modal{
+    background-color: gray;
+    color: pink;
+}
+.modalContent{
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+ 
